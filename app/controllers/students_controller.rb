@@ -15,3 +15,6 @@ class StudentsController < ApplicationController
     redirect_to student_path(@student)
   end
 end
+
+  before_action :set_student, only: :show
+  
